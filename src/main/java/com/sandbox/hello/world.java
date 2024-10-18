@@ -1,4 +1,4 @@
 package com.sandbox.hello;
 
-public class world {
+public class World {
 }

@@ -1,13 +1,14 @@
 package com.sandbox.queues;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
 
-public class ArrayListqueue<T> implements Queue<T> {
+public class ArrayListQueue<T> implements Queue<T> {
 
     protected List<T> queue;
 
-    public ArrayListqueue() {
+    public ArrayListQueue() {
         queue = new ArrayList<>();
     }
 
