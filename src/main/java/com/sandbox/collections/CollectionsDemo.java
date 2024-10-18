@@ -3,11 +3,21 @@ package com.sandbox.collections;
 import java.util.*;
 
 public class CollectionsDemo {
+
     public static void main(String[] args) {
 
-        Set<String> set1 = new LinkedHashSet<>();
+        Set<String> set = new LinkedHashSet<>();
         Set<String> set2 = new HashSet<>();
         Set<String> set3 = new TreeSet<>();
+
+        List<String> list = new Vector<>();
+
+        Queue<String> queue = new LinkedList<>();
+        Deque<String> deque = new LinkedList<>();
+
+        Queue<String> priorityQueue = new PriorityQueue<>();
+
+
 
         set2.add("Hi");
         set2.add("Howdy");
@@ -17,30 +27,30 @@ public class CollectionsDemo {
         set2.add("Hola");
         set2.add("There");
 
-        System.out.println("Set2: " + set2);
+        System.out.println("set2: " + set2);
 
-        set1.add("Hi");
-        set1.add("Howdy");
-        set1.add("Hi");
-        set1.add("Hello");
-        set1.add("Hi");
-        set1.add("Hola");
-        set1.add("There");
+        set.add("Hi");
+        set.add("Howdy");
+        set.add("Hi");
+        set.add("Hello");
+        set.add("Hi");
+        set.add("Hola");
+        set.add("There");
 
-        System.out.println("Set1: " + set1);
+        System.out.println("set: " + set);
 
-        set1.remove("Hi");
-        //System.out.println("Set 1: " + set1);
+        set.remove("Hi");
+
+        System.out.println("set: " + set);
 
         set3.add("Hi");
         set3.add("Howdy");
         set3.add("Hi");
         set3.add("Hello");
         set3.add("Hi");
-        set3.add("Hola");
         set3.add("There");
+        set3.add("Hola");
 
-        System.out.println("Set3: " + set3);
-
+        System.out.println("set3: " + set3);
     }
 }

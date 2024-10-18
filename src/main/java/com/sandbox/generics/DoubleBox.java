@@ -2,17 +2,16 @@ package com.sandbox.generics;
 
 public class DoubleBox {
 
-    private double contents;
+    private Double contents;
 
-    public DoubleBox(){
-
+    public DoubleBox() {
     }
 
-    public double getContents() {
+    public Double getContents() {
         return contents;
     }
 
-    public void setContents(double contents) {
+    public void setContents(Double contents) {
         this.contents = contents;
     }
 

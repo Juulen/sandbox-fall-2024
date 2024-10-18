@@ -50,7 +50,7 @@ public class ArrayListDeque<T> implements Deque<T> {
     public String toString() {
         final StringBuilder sb = new StringBuilder("ArrayListDeque{");
         sb.append("deque=")
-                .append(deque);
+          .append(deque);
         sb.append('}');
         return sb.toString();
     }

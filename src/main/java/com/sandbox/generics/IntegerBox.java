@@ -4,8 +4,7 @@ public class IntegerBox {
 
     private Integer contents;
 
-    public IntegerBox(){
-
+    public IntegerBox() {
     }
 
     public Integer getContents() {
@@ -18,7 +17,7 @@ public class IntegerBox {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("box{");
+        final StringBuilder sb = new StringBuilder("Box{");
         sb.append("contents=").append(contents);
         sb.append('}');
         return sb.toString();

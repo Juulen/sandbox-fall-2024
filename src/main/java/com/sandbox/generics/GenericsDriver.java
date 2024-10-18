@@ -5,30 +5,28 @@ import java.util.Random;
 import java.util.stream.Collectors;
 
 public class GenericsDriver {
+
     public static void main(String[] args) {
-        IntegerBox box = new IntegerBox();
-        box.setContents(42);
-        System.out.println(box);
+
+        IntegerBox integerBox = new IntegerBox();
+        integerBox.setContents(42);
+        System.out.println(integerBox);
 
         DoubleBox doubleBox = new DoubleBox();
-        doubleBox.setContents(42);
+        doubleBox.setContents(42.0);
         System.out.println(doubleBox);
 
         Box<Integer> integerBox2 = new Box<>();
-        Box<Double> doubleBox2 = new Box<>();
-
         integerBox2.setContents(42);
-        doubleBox2.setContents(42.0);
-
         System.out.println(integerBox2);
+
+        Box<Double> doubleBox2 = new Box<>();
+        doubleBox2.setContents(42.0);
         System.out.println(doubleBox2);
 
-        /*
-        Box<String> stringBox = new Box<>();
-        stringBox.setContents("Hello World");
-        System.out.println(stringBox);
-
-         */
+        /*Box<String> stringBox = new Box<>();
+        stringBox.setContents("Hello, World!");
+        System.out.println(stringBox);*/
 
         Crate<Box<Integer>> crate = new Crate<>();
         crate.addBox(integerBox2);
@@ -44,6 +42,10 @@ public class GenericsDriver {
                 .collect(Collectors.toList());
 
         numbers.forEach(number -> crate.addBox(new Box<>(number)));
+
         System.out.println(crate);
+
+
+
     }
 }

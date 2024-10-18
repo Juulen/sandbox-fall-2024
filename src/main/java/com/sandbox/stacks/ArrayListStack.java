@@ -29,7 +29,6 @@ public class ArrayListStack<T> implements Stack<T> {
     @Override
     public void push(T item) {
         this.stack.addLast(item);
-
     }
 
     @Override
@@ -47,7 +46,6 @@ public class ArrayListStack<T> implements Stack<T> {
 
     public static void main(String[] args) {
         ArrayListStack<Integer> stack = new ArrayListStack<>();
-
         stack.push(1);
         stack.push(2);
         stack.push(3);

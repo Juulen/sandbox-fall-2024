@@ -4,12 +4,11 @@ public class Box<T extends Number> {
 
     private T contents;
 
-    public Box(T contents) {
-        this.contents = contents;
+    public Box() {
     }
 
-    public Box(){
-
+    public Box(T contents) {
+        this.contents = contents;
     }
 
     public T getContents() {

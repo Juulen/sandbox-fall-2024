@@ -3,15 +3,15 @@ package com.sandbox.generics;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Crate <T extends Box<?>>{
+public class Crate<T extends Box<?>> {
 
     private List<T> containers;
 
-    public Crate(){
+    public Crate() {
         containers = new ArrayList<>();
     }
 
-    public void addBox(T box){
+    public void addBox(T box) {
         containers.add(box);
     }
 
