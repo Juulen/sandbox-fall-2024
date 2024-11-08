@@ -1,4 +1,4 @@
-package com.sandbox.streamapi;
+package com.sandbox.StreamApi;
 
 import java.util.Random;
 import java.util.function.Supplier;

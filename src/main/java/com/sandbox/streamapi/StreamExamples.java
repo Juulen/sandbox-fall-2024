@@ -1,4 +1,4 @@
-package com.sandbox.streamapi;
+package com.sandbox.StreamApi;
 
 import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
